@@ -4,11 +4,11 @@
 
 Firmware_Diy_Core() {
 
-	Author=AUTO
-	Author_URL=AUTO
+	Author=TaoYaYa
+	Author_URL=www.xinsite.top
 	Default_Flag=AUTO
-	Default_IP="192.168.1.1"
-	Default_Title="Powered by AutoBuild-Actions"
+	Default_IP="192.168.8.2"
+	Default_Title="Powered by xqxwjj"
 
 	Short_Fw_Date=true
 	x86_Full_Images=false
@@ -70,7 +70,24 @@ EOF
 		AddPackage git other luci-app-ikoolproxy iwrt main
 		AddPackage git other helloworld fw876 master
 		AddPackage git themes luci-theme-neobird thinktip main
-		AddPackage git other luci-app-smartdns pymumu lede
+  		AddPackage svn other luci-app-mosdns kiddin9/openwrt-packages/trunk
+                AddPackage svn other v2ray-geodata kiddin9/openwrt-packages/trunk
+		AddPackage svn other oaf kiddin9/openwrt-packages/trunk
+		AddPackage svn other open-app-filter kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-oaf kiddin9/openwrt-packages/trunk		
+		AddPackage svn other ngrokc kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-ngrokc kiddin9/openwrt-packages/trunk		
+		AddPackage svn other luci-app-phtunnel kiddin9/openwrt-packages/trunk
+		AddPackage svn other phtunnel kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-fileassistant kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-poweroff kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-smartdns kiddin9/openwrt-packages/trunk		
+		AddPackage svn other luci-app-usb3disable kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-watchcat kiddin9/openwrt-packages/trunk
+		AddPackage svn other ddnsto kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-ddnsto kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-control-weburl kiddin9/openwrt-packages/trunk
+		AddPackage svn other luci-app-timecontrol kiddin9/openwrt-packages/trunk		
 
 		case "${TARGET_BOARD}" in
 		ramips)
